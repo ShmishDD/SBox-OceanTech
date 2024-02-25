@@ -1,0 +1,42 @@
+@using Sandbox;
+@using Sandbox.UI;
+
+@namespace MyGame
+@inherits RootPanel
+@attribute [StyleSheet]
+
+<div class="Hud">
+    <ChatBox/>
+    <VoiceList/>
+
+    <div class="pointer-visible" />
+
+    <div class="header">
+        <label></label>
+        <label class="subtitle"></label>
+    </div>
+</div>
+
+@code
+{
+    private WaveUI testUi;
+    
+    public override void Tick()
+    {
+        if (Input.Pressed("reload"))
+        {
+            if (testUi != null)
+            {
+                testUi.Delete();
+                testUi = null;
+            }
+            else
+            {
+                testUi = AddChild<WaveUI>();
+            }
+        }
+        
+        DevCamera devCam = Game.LocalClient.Components.Get<DevCamera>();
+        SetClass( "camera-movement", Input.UsingController || Input.Down( "attack2" ) || devCam is not null );
+    }
+}

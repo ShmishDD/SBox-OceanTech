@@ -1,0 +1,29 @@
+﻿WaveUI
+{
+	color: white;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 1100px;
+	height: 350px;
+	//background-color: rgba(32, 32, 32, 0.95);
+	
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.row-outer
+{
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 200px;
+	background-color: rgba(32, 32, 32, 0.95);
+}
+
+.row-outer > row
+{
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 100%;
+}

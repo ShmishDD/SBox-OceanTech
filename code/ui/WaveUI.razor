@@ -1,0 +1,207 @@
+﻿@namespace MyGame
+
+@using Sandbox.UI
+@inherits Sandbox.UI.Panel
+@attribute [StyleSheet]
+
+@code
+{
+    const float XY_MIN = -1f;
+    const float XY_MAX = 1f;
+    const float XY_STEP = 0.01f;
+
+    const float AMPLITUDE_MIN = 0.02f;
+    const float AMPLITUDE_MAX = 40f;
+    const float AMPLITUDE_STEP = 0.01f;
+
+    const float STEEPNESS_MIN = 0f;
+    const float STEEPNESS_MAX = 1f;
+    const float STEEPNESS_STEP = 0.01f;
+
+    const float SPEED_MIN = 0f;
+    const float SPEED_MAX = 50f;
+    const float SPEED_STEP = 1f;
+
+    const float LENGTH_MIN = 32f;
+    const float LENGTH_MAX = 640f;
+    const float LENGTH_STEP = 1f;
+
+    const string FORMAT = "0.000";
+}
+
+<root>
+	@* Wave one *@
+	<row class="row-outer">
+		<label>One</label>
+		
+		<row>
+			<label>X (@WaveConfig.WaveOne.Direction.x.ToString(FORMAT))</label>
+			<SliderControl Min="@(XY_MIN)" Max="@(XY_MAX)" Step="@(XY_STEP)" Value:bind="@WaveConfig.WaveOne.Direction.x"></SliderControl>
+		</row>
+
+		<row>
+			<label>Y (@WaveConfig.WaveOne.Direction.y.ToString(FORMAT))</label>
+			<SliderControl Min="@(XY_MIN)" Max="@(XY_MAX)" Step="@(XY_STEP)" Value:bind="@WaveConfig.WaveOne.Direction.y"></SliderControl>
+		</row>
+
+		<row>
+			<label>Amplitude (@WaveConfig.WaveOne.Amplitude.ToString(FORMAT))</label>
+			<SliderControl Min="@(AMPLITUDE_MIN)" Max="@(AMPLITUDE_MAX)" Step="@(AMPLITUDE_STEP)" Value:bind="@WaveConfig.WaveOne.Amplitude"></SliderControl>
+		</row>
+
+		<row>
+			<label>Steepness (@WaveConfig.WaveOne.Steepness.ToString(FORMAT))</label>
+			<SliderControl Min="@(STEEPNESS_MIN)" Max="@(STEEPNESS_MAX)" Step="@(STEEPNESS_STEP)" Value:bind="@WaveConfig.WaveOne.Steepness"></SliderControl>
+		</row>
+
+		<row>
+			<label>Speed (@WaveConfig.WaveOne.Speed.ToString(FORMAT))</label>
+			<SliderControl Min="@(SPEED_MIN)" Max="@(SPEED_MAX)" Step="@(SPEED_STEP)" Value:bind="@WaveConfig.WaveOne.Speed"></SliderControl>
+		</row>
+
+		<row>
+			<label>Length (@WaveConfig.WaveOne.Length.ToString(FORMAT))</label>
+			<SliderControl Min="@(LENGTH_MIN)" Max="@(LENGTH_MAX)" Step="@(LENGTH_STEP)" Value:bind="@WaveConfig.WaveOne.Length"></SliderControl>
+		</row>
+	</row>
+	
+	@* Wave two *@
+	<row class="row-outer">
+		<label>Two</label>
+		
+		<row>
+			<label>X (@WaveConfig.WaveTwo.Direction.x.ToString(FORMAT))</label>
+			<SliderControl Min="@(XY_MIN)" Max="@(XY_MAX)" Step="@(XY_STEP)" Value:bind="@WaveConfig.WaveTwo.Direction.x"></SliderControl>
+		</row>
+
+		<row>
+			<label>Y (@WaveConfig.WaveTwo.Direction.y.ToString(FORMAT))</label>
+			<SliderControl Min="@(XY_MIN)" Max="@(XY_MAX)" Step="@(XY_STEP)" Value:bind="@WaveConfig.WaveTwo.Direction.y"></SliderControl>
+		</row>
+
+		<row>
+			<label>Amplitude (@WaveConfig.WaveTwo.Amplitude.ToString(FORMAT))</label>
+			<SliderControl Min="@(AMPLITUDE_MIN)" Max="@(AMPLITUDE_MAX)" Step="@(AMPLITUDE_STEP)" Value:bind="@WaveConfig.WaveTwo.Amplitude"></SliderControl>
+		</row>
+
+		<row>
+			<label>Steepness (@WaveConfig.WaveTwo.Steepness.ToString(FORMAT))</label>
+			<SliderControl Min="@(STEEPNESS_MIN)" Max="@(STEEPNESS_MAX)" Step="@(STEEPNESS_STEP)" Value:bind="@WaveConfig.WaveTwo.Steepness"></SliderControl>
+		</row>
+
+		<row>
+			<label>Speed (@WaveConfig.WaveTwo.Speed.ToString(FORMAT))</label>
+			<SliderControl Min="@(SPEED_MIN)" Max="@(SPEED_MAX)" Step="@(SPEED_STEP)" Value:bind="@WaveConfig.WaveTwo.Speed"></SliderControl>
+		</row>
+
+		<row>
+			<label>Length (@WaveConfig.WaveTwo.Length.ToString(FORMAT))</label>
+			<SliderControl Min="@(LENGTH_MIN)" Max="@(LENGTH_MAX)" Step="@(LENGTH_STEP)" Value:bind="@WaveConfig.WaveTwo.Length"></SliderControl>
+		</row>
+	</row>
+
+	@* Wave three *@
+	<row class="row-outer">
+		<label>Three</label>
+		
+		<row>
+			<label>X (@WaveConfig.WaveThree.Direction.x.ToString(FORMAT))</label>
+			<SliderControl Min="@(XY_MIN)" Max="@(XY_MAX)" Step="@(XY_STEP)" Value:bind="@WaveConfig.WaveThree.Direction.x"></SliderControl>
+		</row>
+
+		<row>
+			<label>Y (@WaveConfig.WaveThree.Direction.y.ToString(FORMAT))</label>
+			<SliderControl Min="@(XY_MIN)" Max="@(XY_MAX)" Step="@(XY_STEP)" Value:bind="@WaveConfig.WaveThree.Direction.y"></SliderControl>
+		</row>
+
+		<row>
+			<label>Amplitude (@WaveConfig.WaveThree.Amplitude.ToString(FORMAT))</label>
+			<SliderControl Min="@(AMPLITUDE_MIN)" Max="@(AMPLITUDE_MAX)" Step="@(AMPLITUDE_STEP)" Value:bind="@WaveConfig.WaveThree.Amplitude"></SliderControl>
+		</row>
+
+		<row>
+			<label>Steepness (@WaveConfig.WaveThree.Steepness.ToString(FORMAT))</label>
+			<SliderControl Min="@(STEEPNESS_MIN)" Max="@(STEEPNESS_MAX)" Step="@(STEEPNESS_STEP)" Value:bind="@WaveConfig.WaveThree.Steepness"></SliderControl>
+		</row>
+
+		<row>
+			<label>Speed (@WaveConfig.WaveThree.Speed.ToString(FORMAT))</label>
+			<SliderControl Min="@(SPEED_MIN)" Max="@(SPEED_MAX)" Step="@(SPEED_STEP)" Value:bind="@WaveConfig.WaveThree.Speed"></SliderControl>
+		</row>
+
+		<row>
+			<label>Length (@WaveConfig.WaveThree.Length.ToString(FORMAT))</label>
+			<SliderControl Min="@(LENGTH_MIN)" Max="@(LENGTH_MAX)" Step="@(LENGTH_STEP)" Value:bind="@WaveConfig.WaveThree.Length"></SliderControl>
+		</row>
+	</row>
+	
+	@* Wave four *@
+	<row class="row-outer">
+		<label>Four</label>
+		
+		<row>
+			<label>X (@WaveConfig.WaveFour.Direction.x.ToString(FORMAT))</label>
+			<SliderControl Min="@(XY_MIN)" Max="@(XY_MAX)" Step="@(XY_STEP)" Value:bind="@WaveConfig.WaveFour.Direction.x"></SliderControl>
+		</row>
+
+		<row>
+			<label>Y (@WaveConfig.WaveFour.Direction.y.ToString(FORMAT))</label>
+			<SliderControl Min="@(XY_MIN)" Max="@(XY_MAX)" Step="@(XY_STEP)" Value:bind="@WaveConfig.WaveFour.Direction.y"></SliderControl>
+		</row>
+
+		<row>
+			<label>Amplitude (@WaveConfig.WaveFour.Amplitude.ToString(FORMAT))</label>
+			<SliderControl Min="@(AMPLITUDE_MIN)" Max="@(AMPLITUDE_MAX)" Step="@(AMPLITUDE_STEP)" Value:bind="@WaveConfig.WaveFour.Amplitude"></SliderControl>
+		</row>
+
+		<row>
+			<label>Steepness (@WaveConfig.WaveFour.Steepness.ToString(FORMAT))</label>
+			<SliderControl Min="@(STEEPNESS_MIN)" Max="@(STEEPNESS_MAX)" Step="@(STEEPNESS_STEP)" Value:bind="@WaveConfig.WaveFour.Steepness"></SliderControl>
+		</row>
+
+		<row>
+			<label>Speed (@WaveConfig.WaveFour.Speed.ToString(FORMAT))</label>
+			<SliderControl Min="@(SPEED_MIN)" Max="@(SPEED_MAX)" Step="@(SPEED_STEP)" Value:bind="@WaveConfig.WaveFour.Speed"></SliderControl>
+		</row>
+
+		<row>
+			<label>Length (@WaveConfig.WaveFour.Length.ToString(FORMAT))</label>
+			<SliderControl Min="@(LENGTH_MIN)" Max="@(LENGTH_MAX)" Step="@(LENGTH_STEP)" Value:bind="@WaveConfig.WaveFour.Length"></SliderControl>
+		</row>
+	</row>
+	
+	@* Wave five *@
+	<row class="row-outer">
+		<label>Five</label>
+		
+		<row>
+			<label>X (@WaveConfig.WaveFive.Direction.x.ToString(FORMAT))</label>
+			<SliderControl Min="@(XY_MIN)" Max="@(XY_MAX)" Step="@(XY_STEP)" Value:bind="@WaveConfig.WaveFive.Direction.x"></SliderControl>
+		</row>
+
+		<row>
+			<label>Y (@WaveConfig.WaveFive.Direction.y.ToString(FORMAT))</label>
+			<SliderControl Min="@(XY_MIN)" Max="@(XY_MAX)" Step="@(XY_STEP)" Value:bind="@WaveConfig.WaveFive.Direction.y"></SliderControl>
+		</row>
+
+		<row>
+			<label>Amplitude (@WaveConfig.WaveFive.Amplitude.ToString(FORMAT))</label>
+			<SliderControl Min="@(AMPLITUDE_MIN)" Max="@(AMPLITUDE_MAX)" Step="@(AMPLITUDE_STEP)" Value:bind="@WaveConfig.WaveFive.Amplitude"></SliderControl>
+		</row>
+
+		<row>
+			<label>Steepness (@WaveConfig.WaveFive.Steepness.ToString(FORMAT))</label>
+			<SliderControl Min="@(STEEPNESS_MIN)" Max="@(STEEPNESS_MAX)" Step="@(STEEPNESS_STEP)" Value:bind="@WaveConfig.WaveFive.Steepness"></SliderControl>
+		</row>
+
+		<row>
+			<label>Speed (@WaveConfig.WaveFive.Speed.ToString(FORMAT))</label>
+			<SliderControl Min="@(SPEED_MIN)" Max="@(SPEED_MAX)" Step="@(SPEED_STEP)" Value:bind="@WaveConfig.WaveFive.Speed"></SliderControl>
+		</row>
+
+		<row>
+			<label>Length (@WaveConfig.WaveFive.Length.ToString(FORMAT))</label>
+			<SliderControl Min="@(LENGTH_MIN)" Max="@(LENGTH_MAX)" Step="@(LENGTH_STEP)" Value:bind="@WaveConfig.WaveFive.Length"></SliderControl>
+		</row>
+	</row>
+</root>

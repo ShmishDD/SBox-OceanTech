@@ -1,0 +1,192 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "material.vmat"
+								to = "materials/chrome.vmat"
+							},
+							{
+								from = "chrome.vmat"
+								to = "materials/chrome.vmat"
+							},
+							{
+								from = "dashboard_black.vmat"
+								to = "materials/boat_plastic.vmat"
+							},
+							{
+								from = "dashmeter_glass.vmat"
+								to = "materials/glass.vmat"
+							},
+							{
+								from = "dashmeter_red.vmat"
+								to = "materials/debug_mat.vmat"
+							},
+							{
+								from = "keypad_green.vmat"
+								to = "materials/debug_mat_darkgreen.vmat"
+							},
+							{
+								from = "keypad_red.vmat"
+								to = "materials/debug_mat.vmat"
+							},
+							{
+								from = "wheel.vmat"
+								to = "materials/wheel.vmat"
+							},
+							{
+								from = "stripe.vmat"
+								to = "materials/boat_secondarycolor.vmat"
+							},
+							{
+								from = "navigation_glass.vmat"
+								to = "materials/glass.vmat"
+							},
+							{
+								from = "plastic002.vmat"
+								to = "materials/boat_plastic_002.vmat"
+							},
+							{
+								from = "props.vmat"
+								to = "materials/debug_mat_orange.vmat"
+							},
+							{
+								from = "main_color.vmat"
+								to = "materials/boat_maincolor.vmat"
+							},
+							{
+								from = "rope.vmat"
+								to = "materials/boat_ropes.vmat"
+							},
+							{
+								from = "keypad_glow.vmat"
+								to = "materials/boat_screenglow.vmat"
+							},
+							{
+								from = "engines.vmat"
+								to = "materials/boat_plastic.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsShapeBox"
+						name = "Box"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_tags = "solid"
+						origin = [ -47.762894, -1.610117, 3.606636 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 196.969086, 86.547913, 31.522621 ]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/uncompiled/generic_bat.fbx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 0.3
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						disabled = true
+						filename = "materials/water_occlusion.fbx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = 
+							[
+								"Cube_007",
+							]
+						}
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "FloaterPos1"
+						parent_bone = ""
+						relative_origin = [ 81.0, -23.0, -15.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "FloaterPos2"
+						parent_bone = ""
+						relative_origin = [ 81.0, 23.0, -15.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "FloaterPos3"
+						parent_bone = ""
+						relative_origin = [ -110.0, -23.0, -20.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "FloaterPos4"
+						parent_bone = ""
+						relative_origin = [ -110.0, 23.0, -20.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		base_model_name = ""
+	}
+}

@@ -1,0 +1,4922 @@
+{
+  "Model": "models/watertess_lod_large.vmdl",
+  "Description": "",
+  "BlendMode": "Opaque",
+  "nodes": [
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "29",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "10",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "0",
+      "Position": "128,3296"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Wavelength",
+      "Layer": 2,
+      "Identifier": "1",
+      "Position": "-640,3392"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "192,128",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Amplitude",
+      "Layer": 2,
+      "Identifier": "2",
+      "Position": "-512,2896"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Steepness",
+      "Layer": 2,
+      "Identifier": "3",
+      "Position": "-720,2592"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "7",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "5",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "4",
+      "Position": "-656,2816"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 1,
+      "Value": 1,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "5",
+      "Position": "-1024,2880"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "23",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "4",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "6",
+      "Position": "-512,2800"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "29",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "10",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "7",
+      "Position": "-784,2800"
+    },
+    {
+      "_class": "Sine",
+      "Input": {
+        "Identifier": "27",
+        "Output": "Result"
+      },
+      "Identifier": "8",
+      "Position": "-176,3120"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "38",
+        "Output": "Vector"
+      },
+      "Identifier": "9",
+      "Position": "-272,2944"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.2,
+      "Max": 10,
+      "Value": 0.21068515,
+      "Name": "FourAmplitude",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "10",
+      "Position": "-496,2960"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "40",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "41",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "12",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "11",
+      "Position": "560,2976"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "10",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "8",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "12",
+      "Position": "0,3008"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "19",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "6",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "13",
+      "Position": "-208,2800"
+    },
+    {
+      "_class": "Result",
+      "Albedo": {
+        "Identifier": "238",
+        "Output": "Result"
+      },
+      "Emission": {},
+      "Opacity": {},
+      "Normal": {
+        "Identifier": "250",
+        "Output": "Result"
+      },
+      "Roughness": {},
+      "Metalness": {},
+      "AmbientOcclusion": {},
+      "DefaultOpacity": 1,
+      "DefaultRoughness": 0,
+      "DefaultMetalness": 0.1056152,
+      "DefaultAmbientOcclusion": 1,
+      "PositionOffset": {
+        "Identifier": "360",
+        "Output": "Result"
+      },
+      "Identifier": "14",
+      "Position": "3104,1344"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "0",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "8",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "15",
+      "Position": "592,3472"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "0",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "16",
+      "Position": "256,3296"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "9",
+        "Output": "Y"
+      },
+      "B": {
+        "Identifier": "22",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "17",
+      "Position": "592,3344"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "9",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "22",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "18",
+      "Position": "592,3232"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "20",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "10",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "19",
+      "Position": "-320,2800"
+    },
+    {
+      "_class": "Cosine",
+      "Input": {
+        "Identifier": "27",
+        "Output": "Result"
+      },
+      "Identifier": "20",
+      "Position": "-464,2704"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "18",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "17",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "31",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "21",
+      "Position": "864,3280"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "16",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "20",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "22",
+      "Position": "400,3296"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.01,
+      "Max": 0.4,
+      "Value": 0.17187092,
+      "Name": "FourSteepness",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "23",
+      "Position": "-688,2656"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "25",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "36",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "24",
+      "Position": "-304,3104"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "26",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "29",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "25",
+      "Position": "-32,3232"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 50,
+      "Value": 10.130661,
+      "Name": "FourSpeed",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "26",
+      "Position": "-224,3424"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "28",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "24",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "27",
+      "Position": "-432,3088"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "35",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "29",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "28",
+      "Position": "-544,3088"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "30",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "32",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "29",
+      "Position": "-320,3232"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "33",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": 3.1415927,
+      "Identifier": "30",
+      "Position": "-416,3216"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "15",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "6",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "31",
+      "Position": "720,3472"
+    },
+    {
+      "_class": "Float",
+      "Min": 4,
+      "Max": 640,
+      "Value": 317.46353,
+      "Name": "FourWavelength",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "32",
+      "Position": "-608,3456"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 2,
+      "Value": 2,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "33",
+      "Position": "-608,3216"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "37",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "37",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "34",
+      "Position": "-784,3168"
+    },
+    {
+      "_class": "DotProduct",
+      "InputA": {
+        "Identifier": "38",
+        "Output": "Vector"
+      },
+      "InputB": {
+        "Identifier": "34",
+        "Output": "Vector"
+      },
+      "Identifier": "35",
+      "Position": "-784,3040"
+    },
+    {
+      "_class": "Time",
+      "Identifier": "36",
+      "Position": "-224,3248"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "39",
+        "Output": "Result"
+      },
+      "Identifier": "37",
+      "Position": "-992,3168"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "247",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "247",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "38",
+      "Position": "-992,3024"
+    },
+    {
+      "_class": "WorldPosition",
+      "Identifier": "39",
+      "Position": "-1200,3184"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "9",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "13",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "40",
+      "Position": "-96,2848"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "13",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "9",
+        "Output": "Y"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "41",
+      "Position": "-96,2736"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Speed",
+      "Layer": 2,
+      "Identifier": "42",
+      "Position": "-256,3360"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "54",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "81",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "66",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "43",
+      "Position": "320,848"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "75",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "57",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "44",
+      "Position": "-784,960"
+    },
+    {
+      "_class": "Float",
+      "Min": 4,
+      "Max": 640,
+      "Value": 407.91287,
+      "Name": "TwoWavelength",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "45",
+      "Position": "-848,1328"
+    },
+    {
+      "_class": "Sine",
+      "Input": {
+        "Identifier": "76",
+        "Output": "Result"
+      },
+      "Identifier": "46",
+      "Position": "-416,992"
+    },
+    {
+      "_class": "Time",
+      "Identifier": "47",
+      "Position": "-464,1120"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.2,
+      "Max": 10,
+      "Value": 0.19764037,
+      "Name": "TwoAmplitude",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "48",
+      "Position": "-736,832"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Wavelength",
+      "Layer": 2,
+      "Identifier": "49",
+      "Position": "-880,1264"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "51",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "56",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "50",
+      "Position": "480,1344"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "52",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "46",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "51",
+      "Position": "352,1344"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "57",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "48",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "52",
+      "Position": "-128,1248"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "82",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "48",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "53",
+      "Position": "-560,672"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "69",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "65",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "54",
+      "Position": "-336,720"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "64",
+        "Output": "Result"
+      },
+      "Identifier": "55",
+      "Position": "-1232,1040"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "84",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "77",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "56",
+      "Position": "-752,672"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "78",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "45",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "57",
+      "Position": "-560,1104"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Speed",
+      "Layer": 2,
+      "Identifier": "58",
+      "Position": "-496,1232"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "60",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "82",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "59",
+      "Position": "160,1136"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "52",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "60",
+      "Position": "16,1200"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "245",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "245",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "61",
+      "Position": "-1280,896"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "69",
+        "Output": "Y"
+      },
+      "B": {
+        "Identifier": "59",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "62",
+      "Position": "352,1216"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "192,128",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Amplitude",
+      "Layer": 2,
+      "Identifier": "63",
+      "Position": "-752,768"
+    },
+    {
+      "_class": "WorldPosition",
+      "Identifier": "64",
+      "Position": "-1440,1056"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "53",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "56",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "65",
+      "Position": "-448,672"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "48",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "46",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "66",
+      "Position": "-240,880"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "55",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "55",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "67",
+      "Position": "-1024,1040"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 2,
+      "Value": 2,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "68",
+      "Position": "-848,1088"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "61",
+        "Output": "Vector"
+      },
+      "Identifier": "69",
+      "Position": "-112,944"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 1,
+      "Value": 1,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "70",
+      "Position": "-1264,752"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "59",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "69",
+        "Output": "X"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "71",
+      "Position": "352,1104"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "71",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "62",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "50",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "72",
+      "Position": "624,1152"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 129.5,
+      "Value": 33.718224,
+      "Name": "TwoSpeed",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "73",
+      "Position": "-464,1296"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "73",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "57",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "74",
+      "Position": "-272,1104"
+    },
+    {
+      "_class": "DotProduct",
+      "InputA": {
+        "Identifier": "61",
+        "Output": "Vector"
+      },
+      "InputB": {
+        "Identifier": "67",
+        "Output": "Vector"
+      },
+      "Identifier": "75",
+      "Position": "-1024,912"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "44",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "79",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "76",
+      "Position": "-672,960"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "80",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "70",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "77",
+      "Position": "-896,688"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "68",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": 3.1415927,
+      "Identifier": "78",
+      "Position": "-656,1088"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "74",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "47",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "79",
+      "Position": "-544,976"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "57",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "48",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "80",
+      "Position": "-1024,672"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "65",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "69",
+        "Output": "Y"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "81",
+      "Position": "-336,608"
+    },
+    {
+      "_class": "Cosine",
+      "Input": {
+        "Identifier": "76",
+        "Output": "Result"
+      },
+      "Identifier": "82",
+      "Position": "-704,576"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Steepness",
+      "Layer": 2,
+      "Identifier": "83",
+      "Position": "-960,464"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.01,
+      "Max": 0.25,
+      "Value": 0.013543858,
+      "Name": "TwoSteepness",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "84",
+      "Position": "-928,528"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.01,
+      "Max": 0.4,
+      "Value": 0.031667378,
+      "Name": "ThreeSteepness",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "85",
+      "Position": "-768,1600"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Steepness",
+      "Layer": 2,
+      "Identifier": "86",
+      "Position": "-800,1536"
+    },
+    {
+      "_class": "Cosine",
+      "Input": {
+        "Identifier": "93",
+        "Output": "Result"
+      },
+      "Identifier": "87",
+      "Position": "-544,1648"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "104",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "100",
+        "Output": "Y"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "88",
+      "Position": "-176,1680"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "112",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "121",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "89",
+      "Position": "-864,1744"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "95",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "122",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "90",
+      "Position": "-384,2048"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "101",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": 3.1415927,
+      "Identifier": "91",
+      "Position": "-496,2160"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "89",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "99",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "92",
+      "Position": "-736,1760"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "125",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "90",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "93",
+      "Position": "-512,2032"
+    },
+    {
+      "_class": "DotProduct",
+      "InputA": {
+        "Identifier": "108",
+        "Output": "Vector"
+      },
+      "InputB": {
+        "Identifier": "102",
+        "Output": "Vector"
+      },
+      "Identifier": "94",
+      "Position": "-864,1984"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "96",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "112",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "95",
+      "Position": "-112,2176"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 50,
+      "Value": 50,
+      "Name": "ThreeSpeed",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "96",
+      "Position": "-304,2368"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "98",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "107",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "119",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "97",
+      "Position": "784,2224"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "100",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "110",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "98",
+      "Position": "512,2176"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 1,
+      "Value": 1,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "99",
+      "Position": "-1104,1824"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "108",
+        "Output": "Vector"
+      },
+      "Identifier": "100",
+      "Position": "-352,1904"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 2,
+      "Value": 2,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "101",
+      "Position": "-688,2160"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "114",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "114",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "102",
+      "Position": "-864,2112"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "121",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "123",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "103",
+      "Position": "-80,1952"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "116",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "113",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "104",
+      "Position": "-288,1744"
+    },
+    {
+      "_class": "WorldPosition",
+      "Identifier": "105",
+      "Position": "-1280,2128"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "192,128",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Amplitude",
+      "Layer": 2,
+      "Identifier": "106",
+      "Position": "-592,1840"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "100",
+        "Output": "Y"
+      },
+      "B": {
+        "Identifier": "110",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "107",
+      "Position": "512,2288"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "246",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "246",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "108",
+      "Position": "-1072,1968"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "117",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "109",
+      "Position": "176,2240"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "109",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "87",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "110",
+      "Position": "320,2240"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Speed",
+      "Layer": 2,
+      "Identifier": "111",
+      "Position": "-336,2304"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "91",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "124",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "112",
+      "Position": "-400,2176"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "85",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "92",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "113",
+      "Position": "-592,1744"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "105",
+        "Output": "Result"
+      },
+      "Identifier": "114",
+      "Position": "-1072,2112"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "100",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "104",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "115",
+      "Position": "-176,1792"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "87",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "121",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "116",
+      "Position": "-400,1744"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "112",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "121",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "117",
+      "Position": "48,2240"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "117",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "123",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "118",
+      "Position": "512,2416"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "118",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "113",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "119",
+      "Position": "640,2416"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Wavelength",
+      "Layer": 2,
+      "Identifier": "120",
+      "Position": "-720,2336"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.2,
+      "Max": 10,
+      "Value": 0.18710102,
+      "Name": "ThreeAmplitude",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "121",
+      "Position": "-576,1904"
+    },
+    {
+      "_class": "Time",
+      "Identifier": "122",
+      "Position": "-304,2192"
+    },
+    {
+      "_class": "Sine",
+      "Input": {
+        "Identifier": "93",
+        "Output": "Result"
+      },
+      "Identifier": "123",
+      "Position": "-256,2064"
+    },
+    {
+      "_class": "Float",
+      "Min": 4,
+      "Max": 640,
+      "Value": 235.1526,
+      "Name": "ThreeWavelength",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "124",
+      "Position": "-688,2400"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "94",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "112",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "125",
+      "Position": "-624,2032"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "115",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "88",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "103",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "126",
+      "Position": "480,1920"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "138",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "165",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "150",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "127",
+      "Position": "304,-256"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "159",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "141",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "128",
+      "Position": "-800,-144"
+    },
+    {
+      "_class": "Float",
+      "Min": 4,
+      "Max": 640,
+      "Value": 640,
+      "Name": "OneWavelength",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "129",
+      "Position": "-864,224"
+    },
+    {
+      "_class": "Sine",
+      "Input": {
+        "Identifier": "160",
+        "Output": "Result"
+      },
+      "Identifier": "130",
+      "Position": "-432,-112"
+    },
+    {
+      "_class": "Time",
+      "Identifier": "131",
+      "Position": "-480,16"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.2,
+      "Max": 10,
+      "Value": 1,
+      "Name": "OneAmplitude",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        },
+        "SecondaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "132",
+      "Position": "-752,-272"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Wavelength",
+      "Layer": 1,
+      "Identifier": "133",
+      "Position": "-896,160"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "135",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "140",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "134",
+      "Position": "464,240"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "136",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "130",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "135",
+      "Position": "336,240"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "141",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "132",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "136",
+      "Position": "-128,64"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "166",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "132",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "137",
+      "Position": "-576,-432"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "153",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "149",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "138",
+      "Position": "-352,-384"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "148",
+        "Output": "Result"
+      },
+      "Identifier": "139",
+      "Position": "-1248,-64"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "168",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "161",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "140",
+      "Position": "-768,-432"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "162",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "129",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "141",
+      "Position": "-576,0"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Speed",
+      "Layer": 2,
+      "Identifier": "142",
+      "Position": "-512,128"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "144",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "166",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "143",
+      "Position": "144,64"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "136",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "144",
+      "Position": "0,64"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "244",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "244",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "145",
+      "Position": "-1248,-208"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "153",
+        "Output": "Y"
+      },
+      "B": {
+        "Identifier": "143",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "146",
+      "Position": "336,112"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "192,128",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Amplitude",
+      "Layer": 2,
+      "Identifier": "147",
+      "Position": "-768,-336"
+    },
+    {
+      "_class": "WorldPosition",
+      "Identifier": "148",
+      "Position": "-1456,-48"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "137",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "140",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "149",
+      "Position": "-464,-432"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "132",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "130",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "150",
+      "Position": "-256,-224"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "139",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "139",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "151",
+      "Position": "-1040,-64"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 2,
+      "Value": 2,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "152",
+      "Position": "-864,-16"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "145",
+        "Output": "Vector"
+      },
+      "Identifier": "153",
+      "Position": "-160,-144"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 1,
+      "Value": 1,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "154",
+      "Position": "-1264,-304"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "153",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "143",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "155",
+      "Position": "336,0"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "155",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "146",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "134",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "156",
+      "Position": "608,48"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 31.7,
+      "Value": 31.7,
+      "Name": "OneSpeed",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "157",
+      "Position": "-480,192"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "157",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "141",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "158",
+      "Position": "-288,0"
+    },
+    {
+      "_class": "DotProduct",
+      "InputA": {
+        "Identifier": "145",
+        "Output": "Vector"
+      },
+      "InputB": {
+        "Identifier": "151",
+        "Output": "Vector"
+      },
+      "Identifier": "159",
+      "Position": "-1040,-192"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "128",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "163",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "160",
+      "Position": "-688,-144"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "164",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "154",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "161",
+      "Position": "-912,-416"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "152",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": 3.1415927,
+      "Identifier": "162",
+      "Position": "-672,-16"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "158",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "131",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "163",
+      "Position": "-560,-128"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "141",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "132",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "164",
+      "Position": "-1040,-432"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "149",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "153",
+        "Output": "Y"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "165",
+      "Position": "-352,-496"
+    },
+    {
+      "_class": "Cosine",
+      "Input": {
+        "Identifier": "160",
+        "Output": "Result"
+      },
+      "Identifier": "166",
+      "Position": "-720,-528"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Steepness",
+      "Layer": 2,
+      "Identifier": "167",
+      "Position": "-976,-640"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.01,
+      "Max": 1,
+      "Value": 0.37,
+      "Name": "OneSteepness",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        },
+        "SecondaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "168",
+      "Position": "-944,-576"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "127",
+        "Output": "Vector"
+      },
+      "B": {
+        "Identifier": "43",
+        "Output": "Vector"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "169",
+      "Position": "1600,1456"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "169",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "126",
+        "Output": "Vector"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "170",
+      "Position": "1760,1520"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "170",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "11",
+        "Output": "Vector"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "171",
+      "Position": "1920,1520"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "173",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "21",
+        "Output": "Vector"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "172",
+      "Position": "1856,1344"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "174",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "97",
+        "Output": "Vector"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "173",
+      "Position": "1712,1344"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "156",
+        "Output": "Vector"
+      },
+      "B": {
+        "Identifier": "72",
+        "Output": "Vector"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "174",
+      "Position": "1600,1264"
+    },
+    {
+      "_class": "Subtract",
+      "A": {},
+      "B": {
+        "Identifier": "177",
+        "Output": "Z"
+      },
+      "DefaultA": 1.3,
+      "DefaultB": 0,
+      "Identifier": "175",
+      "Position": "2224,1264"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "177",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "177",
+        "Output": "Y"
+      },
+      "Z": {
+        "Identifier": "175",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "176",
+      "Position": "2320,1168"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "361",
+        "Output": "Result"
+      },
+      "Identifier": "177",
+      "Position": "2048,1168"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.01,
+      "Max": 2.5,
+      "Value": 0.41936383,
+      "Name": "FiveSteepness",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "178",
+      "Position": "-608,3712"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "203",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "187",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "179",
+      "Position": "-704,3856"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 1,
+      "Value": 1,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "180",
+      "Position": "-944,3936"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "179",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "180",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "181",
+      "Position": "-576,3872"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Steepness",
+      "Layer": 2,
+      "Identifier": "182",
+      "Position": "-640,3648"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "248",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "248",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "183",
+      "Position": "-912,4080"
+    },
+    {
+      "_class": "DotProduct",
+      "InputA": {
+        "Identifier": "183",
+        "Output": "Vector"
+      },
+      "InputB": {
+        "Identifier": "197",
+        "Output": "Vector"
+      },
+      "Identifier": "184",
+      "Position": "-704,4096"
+    },
+    {
+      "_class": "Cosine",
+      "Input": {
+        "Identifier": "193",
+        "Output": "Result"
+      },
+      "Identifier": "185",
+      "Position": "-384,3760"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "185",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "187",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "186",
+      "Position": "-240,3856"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.2,
+      "Max": 40,
+      "Value": 0.19964527,
+      "Name": "FiveAmplitude",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "187",
+      "Position": "-416,4016"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "178",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "181",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "188",
+      "Position": "-432,3856"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "192,128",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Amplitude",
+      "Layer": 2,
+      "Identifier": "189",
+      "Position": "-432,3952"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "195",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "205",
+        "Output": "Y"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "190",
+      "Position": "-16,3792"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "205",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "195",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "191",
+      "Position": "-16,3904"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "184",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "203",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "192",
+      "Position": "-464,4144"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "192",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "194",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "193",
+      "Position": "-352,4144"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "204",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "206",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "194",
+      "Position": "-224,4160"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "186",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "188",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "195",
+      "Position": "-128,3856"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "200",
+        "Output": "Result"
+      },
+      "Identifier": "196",
+      "Position": "-912,4224"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "196",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "196",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "197",
+      "Position": "-704,4224"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "187",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "199",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "198",
+      "Position": "80,4064"
+    },
+    {
+      "_class": "Sine",
+      "Input": {
+        "Identifier": "193",
+        "Output": "Result"
+      },
+      "Identifier": "199",
+      "Position": "-96,4176"
+    },
+    {
+      "_class": "WorldPosition",
+      "Identifier": "200",
+      "Position": "-1120,4240"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 2,
+      "Value": 2,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "201",
+      "Position": "-528,4272"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "201",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": 3.1415927,
+      "Identifier": "202",
+      "Position": "-336,4272"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "202",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "216",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "203",
+      "Position": "-240,4288"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "212",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "203",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "204",
+      "Position": "48,4288"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "183",
+        "Output": "Vector"
+      },
+      "Identifier": "205",
+      "Position": "-160,4016"
+    },
+    {
+      "_class": "Time",
+      "Identifier": "206",
+      "Position": "-144,4304"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "208",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "207",
+      "Position": "336,4352"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "203",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "187",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "208",
+      "Position": "208,4352"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "207",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "185",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "209",
+      "Position": "480,4352"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Speed",
+      "Layer": 2,
+      "Identifier": "210",
+      "Position": "-176,4416"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Wavelength",
+      "Layer": 2,
+      "Identifier": "211",
+      "Position": "-560,4448"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 50,
+      "Value": 0.7244768,
+      "Name": "FiveSpeed",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "212",
+      "Position": "-144,4480"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "205",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "209",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "213",
+      "Position": "672,4288"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "205",
+        "Output": "Y"
+      },
+      "B": {
+        "Identifier": "209",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "214",
+      "Position": "672,4400"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "191",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "190",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "198",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "215",
+      "Position": "640,4032"
+    },
+    {
+      "_class": "Float",
+      "Min": 4,
+      "Max": 640,
+      "Value": 307.47278,
+      "Name": "FiveWavelength",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "216",
+      "Position": "-528,4512"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "218",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "199",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "217",
+      "Position": "800,4528"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "208",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "188",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "218",
+      "Position": "592,4544"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "213",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "214",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "217",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "219",
+      "Position": "944,4336"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "172",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "219",
+        "Output": "Vector"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "220",
+      "Position": "1984,1344"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "171",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "215",
+        "Output": "Vector"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "221",
+      "Position": "2080,1536"
+    },
+    {
+      "_class": "TextureSampler",
+      "Coords": {
+        "Identifier": "224",
+        "Output": "Result"
+      },
+      "Image": "materials/ocean/water_normal.png",
+      "Sampler": {
+        "Filter": "Point"
+      },
+      "UI": {
+        "Name": "",
+        "Default": "1,1,1,1",
+        "SrgbRead": true,
+        "CreateInput": "CreateInputTexture2D"
+      },
+      "Identifier": "222",
+      "Position": "2032,976"
+    },
+    {
+      "_class": "TextureCoord",
+      "UseSecondaryCoord": false,
+      "Tiling": "1,1",
+      "Identifier": "223",
+      "Position": "1632,944"
+    },
+    {
+      "_class": "TileAndOffset",
+      "Coords": {
+        "Identifier": "223",
+        "Output": "Result"
+      },
+      "Tile": {},
+      "Offset": {
+        "Identifier": "229",
+        "Output": "Vector"
+      },
+      "DefaultTile": "1,1",
+      "DefaultOffset": "0,0",
+      "WrapTo01": false,
+      "Identifier": "224",
+      "Position": "1872,1056"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 0.2,
+      "Value": 0.2,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "225",
+      "Position": "1632,672"
+    },
+    {
+      "_class": "Float3",
+      "Value": "3,3,3",
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "226",
+      "Position": "1856,928"
+    },
+    {
+      "_class": "Multiply",
+      "A": {},
+      "B": {
+        "Identifier": "225",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "227",
+      "Position": "1824,800"
+    },
+    {
+      "_class": "Time",
+      "Identifier": "228",
+      "Position": "1392,816"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {},
+      "Y": {
+        "Identifier": "227",
+        "Output": "Result"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "229",
+      "Position": "1952,656"
+    },
+    {
+      "_class": "TextureSampler",
+      "Coords": {
+        "Identifier": "231",
+        "Output": "Result"
+      },
+      "Image": "materials/ocean/water_normal.png",
+      "Sampler": {
+        "Filter": "Point"
+      },
+      "UI": {
+        "Name": "",
+        "Default": "1,1,1,1",
+        "SrgbRead": true,
+        "CreateInput": "CreateInputTexture2D"
+      },
+      "Identifier": "230",
+      "Position": "2336,640"
+    },
+    {
+      "_class": "TileAndOffset",
+      "Coords": {
+        "Identifier": "223",
+        "Output": "Result"
+      },
+      "Tile": {},
+      "Offset": {
+        "Identifier": "234",
+        "Output": "Vector"
+      },
+      "DefaultTile": "1,1",
+      "DefaultOffset": "0,0",
+      "WrapTo01": false,
+      "Identifier": "231",
+      "Position": "2160,720"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 0.5,
+      "Value": 0.5,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "232",
+      "Position": "1632,592"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "232",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "228",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "233",
+      "Position": "1824,688"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "233",
+        "Output": "Result"
+      },
+      "Y": {},
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "234",
+      "Position": "1952,512"
+    },
+    {
+      "_class": "Float3",
+      "Value": "1,1,1",
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "235",
+      "Position": "2160,592"
+    },
+    {
+      "_class": "Branch",
+      "True": {
+        "Identifier": "127",
+        "Output": "Vector"
+      },
+      "False": {},
+      "A": {
+        "Identifier": "237",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "237",
+        "Output": "Result"
+      },
+      "Name": "Position",
+      "Operator": "Equal",
+      "Enabled": true,
+      "UI": {
+        "Type": "Color",
+        "PrimaryGroup": {
+          "Name": "asd",
+          "Priority": 1
+        }
+      },
+      "Identifier": "236",
+      "Position": "768,-224"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 1,
+      "Value": 1,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "237",
+      "Position": "512,-304"
+    },
+    {
+      "_class": "Lerp",
+      "A": {
+        "Identifier": "241",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "242",
+        "Output": "Result"
+      },
+      "C": {
+        "Identifier": "239",
+        "Output": "Result"
+      },
+      "Fraction": 0.5,
+      "Identifier": "238",
+      "Position": "3232,1056"
+    },
+    {
+      "_class": "Fresnel",
+      "Normal": {
+        "Identifier": "250",
+        "Output": "Result"
+      },
+      "Direction": {
+        "Identifier": "240",
+        "Output": "Result"
+      },
+      "Power": {},
+      "DefaultPower": 1,
+      "Identifier": "239",
+      "Position": "2880,864"
+    },
+    {
+      "_class": "WorldPosition",
+      "Identifier": "240",
+      "Position": "2864,976"
+    },
+    {
+      "_class": "Float4",
+      "Value": "0,0.02398,0.07514,1",
+      "Name": "Second Color",
+      "IsAttribute": false,
+      "UI": {
+        "Type": "Color"
+      },
+      "Identifier": "241",
+      "Position": "2864,1040"
+    },
+    {
+      "_class": "Float4",
+      "Value": "0,0.37688,0.48266,1",
+      "Name": "First Color",
+      "IsAttribute": false,
+      "UI": {
+        "Type": "Color"
+      },
+      "Identifier": "242",
+      "Position": "2864,1200"
+    },
+    {
+      "_class": "Normalize",
+      "Input": {
+        "Identifier": "176",
+        "Output": "Vector"
+      },
+      "Identifier": "243",
+      "Position": "2512,1216"
+    },
+    {
+      "_class": "Float3",
+      "Value": "0.3,0.45,0",
+      "Name": "OneDirection",
+      "IsAttribute": true,
+      "UI": {},
+      "Identifier": "244",
+      "Position": "-1632,-208"
+    },
+    {
+      "_class": "Float3",
+      "Value": "0.733,0.337,0",
+      "Name": "TwoDirection",
+      "IsAttribute": true,
+      "UI": {},
+      "Identifier": "245",
+      "Position": "-1536,896"
+    },
+    {
+      "_class": "Float3",
+      "Value": "0.258,0.77,0",
+      "Name": "ThreeDirection",
+      "IsAttribute": true,
+      "UI": {},
+      "Identifier": "246",
+      "Position": "-1328,1968"
+    },
+    {
+      "_class": "Float3",
+      "Value": "1,0.413,0",
+      "Name": "FourDirection",
+      "IsAttribute": true,
+      "UI": {},
+      "Identifier": "247",
+      "Position": "-1440,3040"
+    },
+    {
+      "_class": "Float3",
+      "Value": "0.148,0.754,0",
+      "Name": "FiveDirection",
+      "IsAttribute": true,
+      "UI": {},
+      "Identifier": "248",
+      "Position": "-1136,4080"
+    },
+    {
+      "_class": "Float4",
+      "Value": "0.00101,0,0.03757,1",
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {
+        "Type": "Color"
+      },
+      "Identifier": "249",
+      "Position": "2848,1376"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "271",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "243",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "250",
+      "Position": "2688,1200"
+    },
+    {
+      "_class": "TransformNormal",
+      "Input": {
+        "Identifier": "230",
+        "Output": "Result"
+      },
+      "InputSpace": "Object",
+      "DecodeNormal": true,
+      "Identifier": "251",
+      "Position": "2512,640"
+    },
+    {
+      "_class": "ViewDirection",
+      "Identifier": "252",
+      "Position": "1168,832"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "252",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "253",
+      "Position": "1264,736"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": -0.5,
+      "Value": -0.24870874,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "254",
+      "Position": "1632,512"
+    },
+    {
+      "_class": "TransformNormal",
+      "Input": {
+        "Identifier": "222",
+        "Output": "Result"
+      },
+      "InputSpace": "Object",
+      "DecodeNormal": true,
+      "Identifier": "255",
+      "Position": "2208,976"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": -0.5,
+      "Value": -0.34110728,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "256",
+      "Position": "1632,432"
+    },
+    {
+      "_class": "Blend",
+      "A": {
+        "Identifier": "251",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "255",
+        "Output": "Result"
+      },
+      "C": {},
+      "Fraction": 0.5,
+      "BlendMode": "Mix",
+      "Clamp": true,
+      "Identifier": "257",
+      "Position": "2512,864"
+    },
+    {
+      "_class": "Blend",
+      "A": {
+        "Identifier": "269",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "270",
+        "Output": "Result"
+      },
+      "C": {},
+      "Fraction": 0.5,
+      "BlendMode": "Mix",
+      "Clamp": true,
+      "Identifier": "258",
+      "Position": "2960,288"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "256",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "228",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "259",
+      "Position": "1824,464"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "254",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "228",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "260",
+      "Position": "1824,576"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "259",
+        "Output": "Result"
+      },
+      "Y": {},
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "261",
+      "Position": "1952,224"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {},
+      "Y": {
+        "Identifier": "260",
+        "Output": "Result"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "262",
+      "Position": "1952,368"
+    },
+    {
+      "_class": "TileAndOffset",
+      "Coords": {
+        "Identifier": "223",
+        "Output": "Result"
+      },
+      "Tile": {},
+      "Offset": {
+        "Identifier": "261",
+        "Output": "Vector"
+      },
+      "DefaultTile": "1,1",
+      "DefaultOffset": "0,0",
+      "WrapTo01": false,
+      "Identifier": "263",
+      "Position": "2192,240"
+    },
+    {
+      "_class": "TileAndOffset",
+      "Coords": {
+        "Identifier": "223",
+        "Output": "Result"
+      },
+      "Tile": {},
+      "Offset": {
+        "Identifier": "262",
+        "Output": "Vector"
+      },
+      "DefaultTile": "1,1",
+      "DefaultOffset": "0,0",
+      "WrapTo01": false,
+      "Identifier": "264",
+      "Position": "2192,368"
+    },
+    {
+      "_class": "Float3",
+      "Value": "1,1,0",
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "265",
+      "Position": "2368,480"
+    },
+    {
+      "_class": "Float3",
+      "Value": "1.2,1.2,1.2",
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "266",
+      "Position": "2368,96"
+    },
+    {
+      "_class": "TextureSampler",
+      "Coords": {
+        "Identifier": "263",
+        "Output": "Result"
+      },
+      "Image": "materials/ocean/water_normal.png",
+      "Sampler": {
+        "Filter": "Point"
+      },
+      "UI": {
+        "Name": "",
+        "Default": "1,1,1,1",
+        "SrgbRead": true,
+        "CreateInput": "CreateInputTexture2D"
+      },
+      "Identifier": "267",
+      "Position": "2560,176"
+    },
+    {
+      "_class": "TextureSampler",
+      "Coords": {
+        "Identifier": "264",
+        "Output": "Result"
+      },
+      "Image": "materials/ocean/water_normal.png",
+      "Sampler": {
+        "Filter": "Point"
+      },
+      "UI": {
+        "Name": "",
+        "Default": "1,1,1,1",
+        "SrgbRead": true,
+        "CreateInput": "CreateInputTexture2D"
+      },
+      "Identifier": "268",
+      "Position": "2560,368"
+    },
+    {
+      "_class": "TransformNormal",
+      "Input": {
+        "Identifier": "267",
+        "Output": "Result"
+      },
+      "InputSpace": "Object",
+      "DecodeNormal": true,
+      "Identifier": "269",
+      "Position": "2752,192"
+    },
+    {
+      "_class": "TransformNormal",
+      "Input": {
+        "Identifier": "268",
+        "Output": "Result"
+      },
+      "InputSpace": "Object",
+      "DecodeNormal": true,
+      "Identifier": "270",
+      "Position": "2752,384"
+    },
+    {
+      "_class": "Blend",
+      "A": {
+        "Identifier": "258",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "257",
+        "Output": "Result"
+      },
+      "C": {},
+      "Fraction": 0.5,
+      "BlendMode": "Mix",
+      "Clamp": true,
+      "Identifier": "271",
+      "Position": "2800,656"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 1,
+      "Value": 1,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "272",
+      "Position": "-944,3936"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "288",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "276",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "273",
+      "Position": "-704,3856"
+    },
+    {
+      "_class": "Float3",
+      "Value": "0.148,0.754,0",
+      "Name": "FiveDirection",
+      "IsAttribute": true,
+      "UI": {},
+      "Identifier": "274",
+      "Position": "-1136,4080"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "281",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "280",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "275",
+      "Position": "-432,3856"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.2,
+      "Max": 40,
+      "Value": 0.19964527,
+      "Name": "FiveAmplitude",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "276",
+      "Position": "-416,4016"
+    },
+    {
+      "_class": "Cosine",
+      "Input": {
+        "Identifier": "285",
+        "Output": "Result"
+      },
+      "Identifier": "277",
+      "Position": "-384,3760"
+    },
+    {
+      "_class": "DotProduct",
+      "InputA": {
+        "Identifier": "279",
+        "Output": "Vector"
+      },
+      "InputB": {
+        "Identifier": "293",
+        "Output": "Vector"
+      },
+      "Identifier": "278",
+      "Position": "-704,4096"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "274",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "274",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "279",
+      "Position": "-912,4080"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "273",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "272",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "280",
+      "Position": "-576,3872"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.01,
+      "Max": 2.5,
+      "Value": 0.41936383,
+      "Name": "FiveSteepness",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "281",
+      "Position": "-608,3712"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "192,128",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Amplitude",
+      "Layer": 2,
+      "Identifier": "282",
+      "Position": "-432,3952"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Steepness",
+      "Layer": 2,
+      "Identifier": "283",
+      "Position": "-640,3648"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "278",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "288",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "284",
+      "Position": "-464,4144"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "284",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "296",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "285",
+      "Position": "-352,4144"
+    },
+    {
+      "_class": "Time",
+      "Identifier": "286",
+      "Position": "-144,4304"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "279",
+        "Output": "Vector"
+      },
+      "Identifier": "287",
+      "Position": "-160,4016"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "289",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "307",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "288",
+      "Position": "-240,4288"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "290",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": 3.1415927,
+      "Identifier": "289",
+      "Position": "-336,4272"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 2,
+      "Value": 2,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "290",
+      "Position": "-528,4272"
+    },
+    {
+      "_class": "WorldPosition",
+      "Identifier": "291",
+      "Position": "-1120,4240"
+    },
+    {
+      "_class": "Sine",
+      "Input": {
+        "Identifier": "285",
+        "Output": "Result"
+      },
+      "Identifier": "292",
+      "Position": "-96,4176"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "294",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "294",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "293",
+      "Position": "-704,4224"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "291",
+        "Output": "Result"
+      },
+      "Identifier": "294",
+      "Position": "-912,4224"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "299",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "275",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "295",
+      "Position": "-128,3856"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "300",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "286",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "296",
+      "Position": "-224,4160"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "287",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "295",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "297",
+      "Position": "-16,3904"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "295",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "287",
+        "Output": "Y"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "298",
+      "Position": "-16,3792"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "277",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "276",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "299",
+      "Position": "-240,3856"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "304",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "288",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "300",
+      "Position": "48,4288"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "276",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "292",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "301",
+      "Position": "80,4064"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "288",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "276",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "302",
+      "Position": "208,4352"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Speed",
+      "Layer": 2,
+      "Identifier": "303",
+      "Position": "-176,4416"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 50,
+      "Value": 0.7244768,
+      "Name": "FiveSpeed",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "304",
+      "Position": "-144,4480"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "302",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "305",
+      "Position": "336,4352"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Wavelength",
+      "Layer": 2,
+      "Identifier": "306",
+      "Position": "-560,4448"
+    },
+    {
+      "_class": "Float",
+      "Min": 4,
+      "Max": 640,
+      "Value": 307.47278,
+      "Name": "FiveWavelength",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "307",
+      "Position": "-528,4512"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "305",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "277",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "308",
+      "Position": "480,4352"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "302",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "275",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "309",
+      "Position": "592,4544"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "297",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "298",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "301",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "310",
+      "Position": "640,4032"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "287",
+        "Output": "Y"
+      },
+      "B": {
+        "Identifier": "308",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "311",
+      "Position": "672,4400"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "287",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "308",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "312",
+      "Position": "672,4288"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "309",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "292",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "313",
+      "Position": "800,4528"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "312",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "311",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "313",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "314",
+      "Position": "944,4336"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 1,
+      "Value": 1,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "315",
+      "Position": "-848,5072"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "331",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "319",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "316",
+      "Position": "-608,4992"
+    },
+    {
+      "_class": "Float3",
+      "Value": "1,0.410065,0",
+      "Name": "FiveDirection",
+      "IsAttribute": true,
+      "UI": {},
+      "Identifier": "317",
+      "Position": "-1040,5216"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "324",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "323",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "318",
+      "Position": "-336,4992"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.2,
+      "Max": 40,
+      "Value": 1206.95,
+      "Name": "FiveAmplitude",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "319",
+      "Position": "-320,5152"
+    },
+    {
+      "_class": "Cosine",
+      "Input": {
+        "Identifier": "328",
+        "Output": "Result"
+      },
+      "Identifier": "320",
+      "Position": "-288,4896"
+    },
+    {
+      "_class": "DotProduct",
+      "InputA": {
+        "Identifier": "322",
+        "Output": "Vector"
+      },
+      "InputB": {
+        "Identifier": "336",
+        "Output": "Vector"
+      },
+      "Identifier": "321",
+      "Position": "-608,5232"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "317",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "317",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "322",
+      "Position": "-816,5216"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "316",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "315",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "323",
+      "Position": "-480,5008"
+    },
+    {
+      "_class": "Float",
+      "Min": 0.01,
+      "Max": 2.5,
+      "Value": 2.5,
+      "Name": "FiveSteepness",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "324",
+      "Position": "-512,4848"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "192,128",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Amplitude",
+      "Layer": 2,
+      "Identifier": "325",
+      "Position": "-336,5088"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Steepness",
+      "Layer": 2,
+      "Identifier": "326",
+      "Position": "-544,4784"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "321",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "331",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "327",
+      "Position": "-368,5280"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "327",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "339",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "328",
+      "Position": "-256,5280"
+    },
+    {
+      "_class": "Time",
+      "Identifier": "329",
+      "Position": "-48,5440"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "322",
+        "Output": "Vector"
+      },
+      "Identifier": "330",
+      "Position": "-64,5152"
+    },
+    {
+      "_class": "Divide",
+      "A": {
+        "Identifier": "332",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "350",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "331",
+      "Position": "-144,5424"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "333",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": 3.1415927,
+      "Identifier": "332",
+      "Position": "-240,5408"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 2,
+      "Value": 2,
+      "Name": "",
+      "IsAttribute": false,
+      "UI": {},
+      "Identifier": "333",
+      "Position": "-432,5408"
+    },
+    {
+      "_class": "WorldPosition",
+      "Identifier": "334",
+      "Position": "-1024,5376"
+    },
+    {
+      "_class": "Sine",
+      "Input": {
+        "Identifier": "328",
+        "Output": "Result"
+      },
+      "Identifier": "335",
+      "Position": "0,5312"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "337",
+        "Output": "X"
+      },
+      "Y": {
+        "Identifier": "337",
+        "Output": "Y"
+      },
+      "Z": {},
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "336",
+      "Position": "-608,5360"
+    },
+    {
+      "_class": "SplitVector",
+      "Input": {
+        "Identifier": "334",
+        "Output": "Result"
+      },
+      "Identifier": "337",
+      "Position": "-816,5360"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "342",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "318",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "338",
+      "Position": "-32,4992"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "343",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "329",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "339",
+      "Position": "-128,5296"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "330",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "338",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "340",
+      "Position": "80,5040"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "338",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "330",
+        "Output": "Y"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "341",
+      "Position": "80,4928"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "320",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "319",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "342",
+      "Position": "-144,4992"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "347",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "331",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "343",
+      "Position": "144,5424"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "319",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "335",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "344",
+      "Position": "176,5200"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "331",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "319",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "345",
+      "Position": "304,5488"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Speed",
+      "Layer": 2,
+      "Identifier": "346",
+      "Position": "-80,5552"
+    },
+    {
+      "_class": "Float",
+      "Min": 0,
+      "Max": 50,
+      "Value": 29.805698,
+      "Name": "FiveSpeed",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "347",
+      "Position": "-48,5616"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "345",
+        "Output": "Result"
+      },
+      "B": {},
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "348",
+      "Position": "432,5488"
+    },
+    {
+      "_class": "CommentNode",
+      "Size": "224,162",
+      "Color": "Green",
+      "Description": "",
+      "Title": "Wavelength",
+      "Layer": 2,
+      "Identifier": "349",
+      "Position": "-464,5584"
+    },
+    {
+      "_class": "Float",
+      "Min": 4,
+      "Max": 640,
+      "Value": 0.4,
+      "Name": "FiveWavelength",
+      "IsAttribute": true,
+      "UI": {
+        "PrimaryGroup": {
+          "Name": ""
+        }
+      },
+      "Identifier": "350",
+      "Position": "-432,5648"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "348",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "320",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "351",
+      "Position": "576,5488"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "345",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "318",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "352",
+      "Position": "688,5680"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "340",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "341",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "344",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "353",
+      "Position": "736,5168"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "330",
+        "Output": "Y"
+      },
+      "B": {
+        "Identifier": "351",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "354",
+      "Position": "768,5536"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "330",
+        "Output": "X"
+      },
+      "B": {
+        "Identifier": "351",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "355",
+      "Position": "768,5424"
+    },
+    {
+      "_class": "Multiply",
+      "A": {
+        "Identifier": "352",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "335",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": -1,
+      "Identifier": "356",
+      "Position": "896,5664"
+    },
+    {
+      "_class": "CombineVector",
+      "X": {
+        "Identifier": "355",
+        "Output": "Result"
+      },
+      "Y": {
+        "Identifier": "354",
+        "Output": "Result"
+      },
+      "Z": {
+        "Identifier": "356",
+        "Output": "Result"
+      },
+      "W": {},
+      "DefaultX": 0,
+      "DefaultY": 0,
+      "DefaultZ": 0,
+      "DefaultW": 0,
+      "Identifier": "357",
+      "Position": "1040,5472"
+    },
+    {
+      "_class": "Reroute",
+      "Comment": null,
+      "Input": {
+        "Identifier": "353",
+        "Output": "Vector"
+      },
+      "Identifier": "358",
+      "Position": "1856,3760"
+    },
+    {
+      "_class": "Reroute",
+      "Comment": null,
+      "Input": {
+        "Identifier": "357",
+        "Output": "Vector"
+      },
+      "Identifier": "359",
+      "Position": "2224,3696"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "171",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "353",
+        "Output": "Vector"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "360",
+      "Position": "2208,1648"
+    },
+    {
+      "_class": "Add",
+      "A": {
+        "Identifier": "220",
+        "Output": "Result"
+      },
+      "B": {
+        "Identifier": "359",
+        "Output": "Result"
+      },
+      "DefaultA": 0,
+      "DefaultB": 1,
+      "Identifier": "361",
+      "Position": "2096,1344"
+    }
+  ]
+}
